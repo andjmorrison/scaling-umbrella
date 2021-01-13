@@ -48,14 +48,10 @@ python app.py
      * config variables.
      * your app URL.
 
-10. Add a remote for Heroku to your repo:
+10. Add your config variable
 
 ```
-git remote add heroku <path to your Heroku git>
+MONGO_URI = "<MongoDatabaseConnectionString>"
 ```
 
-11. Deploy your app to Heroku:
-
-```
-git push heroku master
-```
+11. Deploy your app to Heroku using the CLI or connect to your Github repo.
