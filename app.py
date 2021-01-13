@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 # Get the connection string for the database
 app.config['MONGO_URI'] = getenv('MONGO_URI', '')
+print(getenv('MONGO_URI'))
 
 # Use PyMongo to establish Mongo connection
 mongo = PyMongo(app)
@@ -20,7 +21,9 @@ mongo = PyMongo(app)
 def home():
 
     # Find one record of data from the mongo database
-    destination_data = mongo.db.collection.find_one()
+    destination_data = mongo.db.vacation.find_one()
+
+    print(f'doc: {destination_data}')
 
     # Return template and data
     return render_template("index.html", vacation=destination_data)
