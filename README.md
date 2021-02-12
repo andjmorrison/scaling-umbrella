@@ -54,4 +54,7 @@ python app.py
 MONGO_URI = "<MongoDatabaseConnectionString>"
 ```
 
-11. Deploy your app to Heroku using the CLI or connect to your Github repo.
+11. Deploy your app to Heroku using the CLI or connect to your GitHub repo.
+    * using the web-interface and connecting a GitHub repo will "build" whatever you push to that repo, which is why we need a Procfile.
+
+*If you're having trouble, see the [Heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python).*
