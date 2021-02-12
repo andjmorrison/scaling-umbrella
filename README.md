@@ -3,6 +3,7 @@
 
      * a .gitignore file for Python.
      * a requirements.txt to tell Heroku what your libraries your app needs.
+        * You may need to generate your own or modify based on libraries used by your application.
      * a Procfile to tell how Heroku how to run your app.
 
 2. Create an .env file and add your database settings to it:
@@ -44,7 +45,6 @@ python app.py
 8. Create a new app in Heroku.
 
 9. In Heroku in your app settings you'll find:
-     * your git path.
      * config variables.
      * your app URL.
 
