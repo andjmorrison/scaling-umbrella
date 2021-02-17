@@ -51,7 +51,7 @@ python app.py
 
 11. Add your config variable
 
-```
+```python
 MONGO_URI = "<MongoDatabaseConnectionString>"
 ```
 
